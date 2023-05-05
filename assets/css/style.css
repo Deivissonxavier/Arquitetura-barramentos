@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans&family=Purple+Purse&family=Roboto&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Public Sans', sans-serif;
 }
   
 a{
@@ -30,7 +33,13 @@ nav{
   
 main{
     background-size: cover;
-    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    text-align: justify;
 }
   
 .nav-list{
@@ -110,4 +119,58 @@ main{
 }
 
 /*Conteúdos*/
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+
+h2{
+    padding: 15px;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: 'Purple Purse', cursive;
+    align-self: start;
+}
+
+h1{
+    font-family: 'Purple Purse', cursive;
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+p{
+    font-size: 1.5em;
+    line-height: 40px;
+    padding-left: 15px;
+    padding: 20px 0;
+}
+img{
+    width: 500px;
+    
+    margin-bottom: 20px;
+    margin-top: -50px;
+}
+
+#principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#principal h1{
+    font-size: 50px;
+}
 

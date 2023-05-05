@@ -23,7 +23,61 @@
         </ul>
         </nav>
     </header>
-    <main></main>
+    <main>
+        <article id="principal">
+            <h1>Principais tipos de barramentos</h1>
+           
+            <p>
+                Entre o processador e memória e os dispositivos de entrada e saída(I/O), acontece a transferência de sinais eletrônicos, ou seja, a transmissão de informações entre eles. Os meios pelo quais as informações trafegam são chamados de barramentos e são classificados da seguinte maneira:
+
+            </p>
+
+        </article>
+
+        <article>
+            <h2>Barramento de dados:</h2>
+            
+            <p>
+                Barramento de dados, também conhecido como data bus, é um conjunto de linhas de comunicação utilizadas para transferir dados entre os componentes de um sistema de computação, como processador, memória e dispositivos de entrada/saída.
+
+                O barramento de dados é responsável por transmitir os dados em paralelo, ou seja, vários bits de uma vez, o que aumenta a velocidade de transferência de dados dentro do computador. A largura do barramento de dados é medida em bits e determina a quantidade de dados que podem ser transferidos simultaneamente.
+                
+                Por exemplo, se um barramento de dados tiver 32 bits de largura, ele pode transferir 4 bytes (32 bits divididos por 8 bits por byte) de dados de uma só vez. Já um barramento de dados com largura de 64 bits pode transferir 8 bytes de dados de uma só vez.
+                
+                É importante ressaltar que a velocidade do barramento de dados pode limitar a velocidade geral do sistema, por isso, os fabricantes de hardware devem projetar barramentos de dados com largura suficiente e velocidade adequada para garantir o bom desempenho do sistema como um todo.
+            </p>
+        </article>
+
+        <article>
+            <h2>Barramento de controle:</h2>
+
+            <p>
+                O barramento de controle, também conhecido como control bus, é um conjunto de linhas de comunicação que transmitem sinais de controle e informações de status entre os componentes de um sistema de computação.
+
+                Ao contrário do barramento de dados, que é usado para transferir dados entre os componentes, o barramento de controle é usado para coordenar as operações dos componentes. Ele envia sinais que indicam a leitura ou escrita de dados, a busca de instruções na memória, a ativação de interrupções e outras operações de controle.
+                
+                O barramento de controle geralmente é composto por várias linhas que transmitem diferentes tipos de sinais de controle, como sinais de clock, que sincronizam as operações dos componentes, sinais de reset, que reiniciam o sistema, e sinais de interrupção, que alertam o processador para lidar com eventos externos.
+                
+                Em um sistema de computação, o barramento de controle trabalha em conjunto com o barramento de dados e o barramento de endereço para permitir a comunicação e coordenação entre os componentes. A largura e a velocidade do barramento de controle podem afetar o desempenho geral do sistema, por isso, é importante que os fabricantes de hardware projetem barramentos de controle adequados para garantir a eficiência e a confiabilidade do sistema.
+            </p>
+        </article>
+
+        <article>
+            <h2>Barramento de endereço:</h2>
+            
+            <p>
+                O barramento de endereços, também conhecido como address bus, é um conjunto de linhas de comunicação que transmitem informações sobre os endereços de memória dos dados que estão sendo transferidos entre os componentes de um sistema de computação.
+
+                O barramento de endereços é usado pelo processador para especificar o endereço de memória de onde os dados serão lidos ou escritos. Ele transmite um endereço de memória que identifica a localização onde os dados estão armazenados e é capaz de endereçar um número específico de células de memória em um determinado momento.
+                
+                A largura do barramento de endereços determina a quantidade de memória que o sistema pode acessar. Por exemplo, se o barramento de endereços tiver uma largura de 16 bits, ele pode endereçar 2^16 (ou 65.536) células de memória, cada uma com um tamanho de palavra definido pelo barramento de dados.
+                
+                O barramento de endereços é crucial para a operação de um sistema de computação, pois permite que o processador acesse a memória e outros dispositivos de entrada/saída conectados ao barramento. É importante ressaltar que a largura do barramento de endereços pode afetar o desempenho do sistema, por isso, os fabricantes de hardware devem projetar barramentos de endereços com largura adequada para garantir a eficiência do sistema como um todo.
+            </p>
+        </article>
+        
+
+    </main>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
