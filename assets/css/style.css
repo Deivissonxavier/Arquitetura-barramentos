@@ -1,37 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans&family=Purple+Purse&family=Roboto&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Public Sans', sans-serif;
 }
-  
-a{
+
+html{
+    scroll-behavior: smooth;
+}
+
+a {
     color: #fff;
     text-decoration: none;
     transition: 0.3s;
 }
-  
-a:hover{
+
+a:hover {
     opacity: 0.7;
+    color: aquamarine;
 }
-  
-.logo{
+
+.logo {
     font-size: 24px;
     text-transform: uppercase;
     letter-spacing: 4px;
+    color: #fff;
+    padding-bottom: 15px;
 }
-  
-nav{
+
+nav {
+    position: fixed;
     display: flex;
     justify-content: space-around;
     align-items: center;
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
     background: #23232e;
-    height: 8vh;
+    width: 100%;
 }
-  
-main{
+
+#introducao{
+    margin-top: 100px;
+}
+
+
+main {
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -41,85 +54,73 @@ main{
     margin: 0 auto;
     text-align: justify;
 }
-  
-.nav-list{
+
+.nav-list {
     list-style: none;
     display: flex;
 }
-  
-.nav-list li{
+
+.nav-list li {
     letter-spacing: 3px;
     margin-left: 32px;
 }
-  
-.mobile-menu{
-    display: none;
-    cursor: pointer;
-}
-  
-.mobile-menu div{
-    width: 32px;
-    height: 2px;
-    background: #fff;
-    margin: 8px;
-    transition: 0.3s;
-}
-  
-@media (max-width: 999px){
-    body{
-      overflow-x: hidden;
+
+
+
+
+
+@media (max-width: 1100px) {
+    
+    nav{
+        display: flex;
+        flex-direction: column;
+        opacity: 0;
     }
+    nav:hover{
+        transition: 0.5s;
+        opacity: 1;
+    }
+
+   
     .nav-list{
-      position: absolute;
-      top: 8vh;
-      right: 0;
-      width: 50vw;
-      height: 92vh;
-      background: #23232e;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-around;
-      transform: translateX(100%);
-      transition: transform 0.3s ease-in;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 40px;
+        margin-bottom: 10px;
     }
-    .nav-list li{
-      margin-left: 0;
-      opacity: 0;
+    
+    ul li{
+        margin-top: 10px;
     }
-    .mobile-menu{
-      display: block;
+
+    a {
+        color: #fff;
     }
-}
-  
-.nav-list.active{
-    transform: translateX(0);
-}
-  
-@keyframes navLinkFade{
-    from{
-      opacity: 0;
-      transform: translateX(50px);
+
+    
+
+    ul li:hover{
+        transition: .5s;
+        scale: 1.6;
+        color: aquamarine;
     }
-    to{
-      opacity: 1;
-      transform: translateX(0);
+    .icon:hover{
+        transition: .5s;
+        scale: 1.6;
     }
-}
-  
-.mobile-menu.active .line1{
-    transform: rotate(-45deg) translate(-8px, 8px);
-}
-  
-.mobile-menu.active .line2{
-    opacity: 0;
-}
-  
-.mobile-menu.active .line3{
-    transform: rotate(45deg) translate(-5px, -7px);
+    .video {
+        width: 100%;
+        height: 250px;
+    }
 }
 
+
+
+
+
 /*Conteúdos*/
-.content{
+.content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -128,7 +129,8 @@ main{
 }
 
 
-article{
+article,
+section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -136,7 +138,7 @@ article{
     padding: 30px 0;
 }
 
-h2{
+h2 {
     padding: 15px;
     font-weight: bold;
     font-size: 40px;
@@ -144,33 +146,57 @@ h2{
     align-self: start;
 }
 
-h1{
+h1 {
     font-family: 'Purple Purse', cursive;
     font-size: 50px;
     margin-top: 20px;
 }
 
-p{
+p {
     font-size: 1.5em;
     line-height: 40px;
     padding-left: 15px;
     padding: 20px 0;
 }
-img{
+
+.video {
+    margin: 30px;
+    border-radius: 10px;
+}
+
+img {
     width: 500px;
-    
+    border-radius: 10px;
     margin-bottom: 20px;
     margin-top: -50px;
 }
 
-#principal{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.icon {
+    width: 40px;
+    background-color: #fff;
+    margin-top: 19px;
+    cursor: pointer;
+    border-radius: 30px;
 }
 
-#principal h1{
-    font-size: 50px;
+.icon:hover{
+    transition: .5s;
+    scale: .7;
+}
+footer {
+    margin: 30px;
+    color: #000000;
+    font-size: 12px;
 }
 
+/*modo escuro*/
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.dark-mode {
+    background-color: #222222;
+    color: #ffffff;
+}

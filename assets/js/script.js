@@ -1,45 +1,15 @@
-class MobileNavbar {
-    constructor(mobileMenu, navList, navLinks) {
-      this.mobileMenu = document.querySelector(mobileMenu);
-      this.navList = document.querySelector(navList);
-      this.navLinks = document.querySelectorAll(navLinks);
-      this.activeClass = "active";
+
+/*Alterar o tema */
+
+const icon = document.querySelector('.icon');
+const body = document.body;
+
+icon.addEventListener('click', function () {
+  body.classList.toggle('dark-mode');
   
-      this.handleClick = this.handleClick.bind(this);
-    }
-  
-    animateLinks() {
-      this.navLinks.forEach((link, index) => {
-        link.style.animation
-          ? (link.style.animation = "")
-          : (link.style.animation = `navLinkFade 0.5s ease forwards ${
-              index / 7 + 0.3
-            }s`);
-      });
-    }
-  
-    handleClick() {
-      this.navList.classList.toggle(this.activeClass);
-      this.mobileMenu.classList.toggle(this.activeClass);
-      this.animateLinks();
-    }
-  
-    addClickEvent() {
-      this.mobileMenu.addEventListener("click", this.handleClick);
-    }
-  
-    init() {
-      if (this.mobileMenu) {
-        this.addClickEvent();
-      }
-      return this;
-    }
+  if (body.classList.contains('dark-mode')) {
+    icon.src = 'assets/img/icon-dark.png';
+  } else {
+    icon.src = 'assets/img/icon-light.png';
   }
-  
-  const mobileNavbar = new MobileNavbar(
-    ".mobile-menu",
-    ".nav-list",
-    ".nav-list li",
-  );
-  mobileNavbar.init();
-  
+});
