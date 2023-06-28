@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Barramentos</title>
 </head>
@@ -24,10 +26,10 @@
         </nav>
     </header>
     <main>
-        <section>
-            <h1 id="introducao">Introdução</h1>
+        <section id="introducao">
+            <h1 class="topic">Introdução</h1>
             <div class="content">
-                <img src="/assets/img/barramentos.jpg" alt="">
+                <img class="imagem" src="/assets/img/barramentos.jpg" alt="">
                 <div class="text">
                     <p>Barramentos são componentes fundamentais em sistemas de computação e eletrônicos. Eles são
                         responsáveis por conectar diferentes dispositivos e componentes dentro de um sistema, permitindo
@@ -48,12 +50,10 @@
             </div>
         </section>
 
-        <section>
-            <div>
-                <h1 id="o_que_e">O que é?</h1>
-            </div>
+        <section id="o_que_e">
+            <h1 class="topic">O que é?</h1>
             <div class="content">
-                <img id="img1" src="/assets/img/o_que_é.jpg" alt="">
+                <img class="imagem" id="img1" src="/assets/img/o_que_é.jpg" alt="">
                 <div class="text">
                     <p>Em sistemas de computação, barramentos são vias de comunicação que permitem a transferência de
                         dados entre os diferentes componentes de hardware do sistema, como processador, memória,
@@ -73,10 +73,10 @@
             </div>
         </section>
 
-        <section>
-            <h1 id="funcionamento">Funcionamento</h1>
+        <section id="funcionamento">
+            <h1 class="topic">Funcionamento</h1>
             <div class="content">
-                <img src="/assets/img/funcionamento.png" alt="">
+                <img class="imagem" src="/assets/img/funcionamento.png" alt="">
                 <div class="text">
                     <p>O funcionamento do barramento é baseado em um sistema de comunicação em que os dados são
                         transferidos entre os componentes do sistema de forma serial ou paralela.</p>
@@ -100,21 +100,14 @@
             </div>
         </section>
 
-        <article>
-            <h1 id="tipos">Principais tipos de barramentos</h1>
-
+        <section id="tipos">
+            <h1 class="topic">Principais tipos de barramentos</h1>
             <p>
                 Entre o processador e memória e os dispositivos de entrada e saída(I/O), acontece a transferência de
                 sinais eletrônicos, ou seja, a transmissão de informações entre eles. Os meios pelo quais as informações
                 trafegam são chamados de barramentos e são classificados da seguinte maneira:
-
             </p>
-
-        </article>
-
-        <article>
             <h2>Barramento de dados:</h2>
-
             <p>
                 Barramento de dados, também conhecido como data bus, é um conjunto de linhas de comunicação utilizadas
                 para transferir dados entre os componentes de um sistema de computação, como processador, memória e
@@ -132,15 +125,10 @@
                 sistema, por isso, os fabricantes de hardware devem projetar barramentos de dados com largura suficiente
                 e velocidade adequada para garantir o bom desempenho do sistema como um todo.
             </p>
-        </article>
-
-        <article>
             <h2>Barramento de controle:</h2>
-
             <p>
                 O barramento de controle, também conhecido como control bus, é um conjunto de linhas de comunicação que
                 transmitem sinais de controle e informações de status entre os componentes de um sistema de computação.
-
                 Ao contrário do barramento de dados, que é usado para transferir dados entre os componentes, o
                 barramento de controle é usado para coordenar as operações dos componentes. Ele envia sinais que indicam
                 a leitura ou escrita de dados, a busca de instruções na memória, a ativação de interrupções e outras
@@ -157,9 +145,6 @@
                 que os fabricantes de hardware projetem barramentos de controle adequados para garantir a eficiência e a
                 confiabilidade do sistema.
             </p>
-        </article>
-
-        <article>
             <h2>Barramento de endereço:</h2>
             <p>
                 O barramento de endereços, também conhecido como address bus, é um conjunto de linhas de comunicação que
@@ -181,9 +166,9 @@
                 isso, os fabricantes de hardware devem projetar barramentos de endereços com largura adequada para
                 garantir a eficiência do sistema como um todo.
             </p>
-        </article>
+        </section>
         <section id="video">
-            <h1>Sugestão de video</h1>
+            <h1 class="topic">Sugestão de video</h1>
             <iframe class="video" width="860" height="515" src="https://www.youtube.com/embed/fTxm73eEiIY"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
