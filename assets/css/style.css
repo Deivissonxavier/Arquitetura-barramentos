@@ -188,12 +188,28 @@ img {
     animation-duration: 0.5s;
 }
 
-footer {
-    margin: 30px;
-    color: #000000;
+footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     font-size: 12px;
 }
 
+.LinksGithub img{
+    width: 30px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+
+.LinksGithub img:hover{
+    transition: 0.5s;
+    scale: 1.5;
+}
+.LinksGithub, .developer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 /*modo escuro*/
 
 body {
